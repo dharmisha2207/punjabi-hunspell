@@ -3,7 +3,7 @@
     <registration>
         <simple-license accept-by="admin" suppress-on-update="false" >
             <license-text xlink:href="LICENSES-en.txt" lang="en" />
-            <license-text xlink:href="LICENCES-pu.txt" lang="pa" />
+            <license-text xlink:href="LICENCES-pa.txt" lang="pa" />
         </simple-license>
     </registration>
     <version value="1.1.1.1" />

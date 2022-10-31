@@ -4,13 +4,13 @@
     <node oor:name="Dictionaries">
         <node oor:name="HunSpellDic_pa_IN" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
-                <value>%origin%/dictionaries/pa_IN.aff %origin%/dictionaries/pa_IN.dic</value>
+                <value>%origin%/pa_IN.aff %origin%/pa_IN.dic</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_SPELL</value>
             </prop>
             <prop oor:name="Locales" oor:type="oor:string-list">
-                <value>pa pa-IN</value>
+                <value>pa-IN</value>
             </prop>
         </node>
     </node>

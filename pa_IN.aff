@@ -8,14 +8,12 @@ KEY ਇਈ|ਉਊ|ਅਆ|ਿੀ|ੁੂ|ੇੈ|ੋੌ|ਖਖ਼|ਗਗ਼|ਜਜ਼|ਫਫ਼
 MAXNGRAMSUGS 10
 MAXDIFF 5
 
+WORDCHARS ੦੧੨੩੪੫੬੭੮੯!"#%&'()*+,-./0123456789:;<=>?@[\]^_{|}~ ×÷।॥
+
 # convert internally for checking spelling
 ICONV 2
 ICONV । .
 ICONV ॥ .
-
-MAP 1
-MAP लळ
-
 
 # offer replacement as suggestion
 REP 99
@@ -54,5 +52,3 @@ BREAK _
 BREAK -
 BREAK ˆ-
 BREAK -$
-
-WORDCHARS ੦੧੨੩੪੫੬੭੮੯!"#%&'()*+,-./0123456789:;<=>?@[\]^_{|}~ ×÷।॥
