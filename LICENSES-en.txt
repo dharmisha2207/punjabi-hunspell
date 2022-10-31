@@ -1,0 +1,12 @@
+PUNJABI SPELLCHECKER FOR OPENOFFICE 
+Version 1.1.1.1
+Last Update on Mon Oct 31 12:56:24 2022 +0530
+
+Authors: Dharmisha Sharma <dharmisha2207@gmail.com>
+
+This spellchecker for OpenOffice is based on Punjabi Hunspell files by Dharmisha Sharma.
+
+Project site: https://github.com/dharmisha2207/punjabi-hunspell
+
+This spellchecker is released with  GPLv3 license
+Visit http://www.gnu.org/licenses/ for more information
