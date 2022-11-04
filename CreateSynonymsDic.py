@@ -1,4 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov  2 22:53:44 2022
 
+@author: DVS
+"""
 import os, sys
 if os.path.isfile("synonymsbase.txt"):
     cl = cw = cc = 0
