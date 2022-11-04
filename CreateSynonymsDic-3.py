@@ -2,8 +2,7 @@
 import os, sys
 if os.path.isfile("synonymsbase.txt"):
     cl = cw = cc = 0
-    with open("Synonyms.dat", "wb") as fw:  
-        fw.write("UTF-8\n".encode())
+    with open("Synonyms.dic", "wb") as fw:        
         with open("Synonymsbase.txt", 'rb') as fr:
             for line in fr:
                 str = line.decode()
@@ -13,24 +12,21 @@ if os.path.isfile("synonymsbase.txt"):
                 str = words[0]
                 words = str.split(",")
                 #select all words root for once and alternate
+                root = words[0]
+                root1 = words[0] + "|1\n"
+                fw.write(root1.encode())
+                words.remove(root)
+                #words.remove(wtype)
                 wl = len(words)
-                for i in range(wl):                    
-                    root = words[0]
-                    root1 = words[0].strip() + "|1\n"
-                    #fw.write(root1.encode())
-                    words.remove(root)
-                    #words.remove(wtype)
-                    wl1 = len(words)
-                    ws = "("+wtype+")|"
-                    for j in range(wl1):
-                        if j < wl1-1:
-                            ws += words[j].strip()+"|"
-                        else:
-                            ws += words[j].strip()
-                    ws +="\n"
-                    fw.write(root1.encode())
-                    fw.write(ws.encode())
-                    words.append(root)
+                ws = "("+wtype+")|"
+                for i in range(wl):
+                    if i < wl-1:
+                        ws += words[i]+"|"
+                    else:
+                        ws += words[i]
+                ws +="\n"
+                fw.write(ws.encode())
+                cc += len(str)
             else:
                 # No more lines to be read from file
                 print("EOF reached")
