@@ -1,0 +1,49 @@
+﻿SET UTF-8
+# Punjabi Spellcheking Dictionary in Hunspell format - SPELLCHECKERVERSION
+# Last Update by Dharmisha Sharma on SPELLCHECKERDATE
+# Files available from http://github.com/dharmisha2207/punjabi-hunspell
+#
+TRY ਼ਾਿੀੁੂੇੈੋੌ੍ਂਅਆਇਈਉਊਏਐਓਔਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਲ਼ਵਸ਼ਸਹਖ਼ਗ਼ਜ਼ੜਫ਼ੲੳੴ
+KEY ਇਈ|ਉਊ|ਅਆ|ਿੀ|ੁੂ|ੇੈ|ੋੌ|ਖਖ਼|ਗਗ਼|ਜਜ਼|ਫਫ਼|ਲਲ਼|ਸ਼ਸਂ|ਂੰ|
+MAXNGRAMSUGS 10
+MAXDIFF 5
+
+WORDCHARS ੦੧੨੩੪੫੬੭੮੯!"#%&'()*+,-./0123456789:;<=>?@[\]^_{|}~ ×÷।॥
+
+# convert internally for checking spelling
+ICONV 2
+ICONV । .
+ICONV ॥ .
+
+# offer replacement as suggestion
+REP 99
+REP ਿ ੀ
+REP ੀ ਿ
+REP ੁ ੂ
+REP ੂ ੁ
+REP ੋ ੌ
+REP ੌ ੋ
+REP ਅਾ ਆ
+REP ਅੈ ਐ
+REP ਅੌ ਔ
+REP ੳੂ ਊ
+REP ੳੋ ਓ
+REP ਖ਼ ਖ਼
+REP ਗ਼ ਗ਼
+REP ਜ਼ ਜ਼
+REP ਫ਼ ਫ਼
+REP ਸ਼ ਸ਼
+REP ਲ਼ ਲ਼
+REP ਖ਼ ਖ
+REP ਗ਼ ਗ
+REP ਜ਼ ਜ
+REP ਫ਼ ਫ
+REP ਸ਼ ਸ
+REP ਲ਼ ਲ
+REP ਖ ਖ਼
+REP ਗ ਗ਼
+REP ਜ ਜ਼
+REP ਫ ਫ਼
+REP ਸ ਸ਼
+REP ਲ ਲ਼
+
