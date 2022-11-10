@@ -25,6 +25,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 
 def remove_hyperlinks_marks_styles(tweet):
+    """
+    Removes hyperlinks and styles
+    """
     # remove old style retweet text "RT"
     new_tweet = re.sub(r'^RT[\s]+', '', tweet)
 
@@ -43,6 +46,9 @@ tokenizer: TweetTokenizer = TweetTokenizer(preserve_case=False, strip_handles=Tr
 
 
 def tokenize_tweet(tweet):
+    """
+    Generates list of tokens
+    """
     tweet_tokens = tokenizer.tokenize(tweet)
 
     return tweet_tokens
@@ -57,6 +63,9 @@ punctuations = string.punctuation
 
 
 def remove_stopwords_punctuations(tweet_tokens):
+    """
+    Removes stopwords from text
+    """
     tweets_clean = []
 
     for word in tweet_tokens:
@@ -80,6 +89,7 @@ def get_stem(tweets_clean):
 
 
 def listToString(s):
+
     # initialize an empty string
     str1 = " "
 
@@ -87,6 +97,9 @@ def listToString(s):
     return (str1.join(s))
 
 def process_tweet(tweet):
+    """
+    Makes calls to all above functions to process tweets
+    """
     processed_tweet = remove_hyperlinks_marks_styles(tweet)
     tweet_tokens = tokenize_tweet(processed_tweet)
     tweets_clean = remove_stopwords_punctuations(tweet_tokens)
