@@ -7,10 +7,17 @@ import nltk
 
 
 class sentiment_analysis_code():
-
+    """
+    A class with utility functions to clean text, return sentiment etc
+    """
     lem = WordNetLemmatizer()
 
     def cleaning(self, text):
+        """
+        Performs NLP tasks like Tokenization, Lemmatization, removing punctuation marks etc
+        :param text: string
+        :return: None
+        """
         txt = str(text)
         txt = re.sub(r"http\S+", "", txt)
         if len(txt) == 0:
@@ -45,6 +52,12 @@ class sentiment_analysis_code():
                         return txt
 
     def get_tweet_sentiment(self, tweet):
+        """
+        Uses Textblob to return sentiment of text
+        The underlying mechanism Textblob uses is Naive Bayes
+        :param tweet: string
+        :return: string
+        """
         #cleaning of tweet
             tweet = ' '.join(self.cleaning(tweet))
             analysis = TextBlob(tweet)
